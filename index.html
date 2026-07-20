@@ -452,7 +452,7 @@ return response()->stream(function () use ($orderText) {
       ["GET vs POST?", "GET in URL (~2048 chars), for fetching. POST in body, no limit, for sending data."],
       ["unset() vs unlink()?", "unset() removes a variable; unlink() deletes a file."],
       ["Max upload size?", "Default 128MB (upload_max_filesize / post_max_size)."],
-      ["What are streams?", "Unified read/write from many sources without loading all into memory."],
+      ["What are streams?", "PHP Streams provide a unified interface for reading and writing data from different sources."],
       ["Autoloading?", "Loads classes on demand via Composer (PSR-4), no manual includes."],
       ["Prevent XSS?", "htmlspecialchars on output, validate/sanitize input, never echo raw user input."],
       ["crypt() vs password_hash()?", "password_hash() is a safe wrapper over crypt()."],
