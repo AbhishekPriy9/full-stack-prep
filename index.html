@@ -454,7 +454,7 @@ return response()->stream(function () use ($orderText) {
       ["Max upload size?", "Default 128MB (upload_max_filesize / post_max_size)."],
       ["What are streams?", "PHP Streams provide a unified interface for reading and writing data from different sources."],
       ["Autoloading?", "Loads classes on demand via Composer (PSR-4), no manual includes."],
-      ["Prevent XSS?", "htmlspecialchars on output, validate/sanitize input, never echo raw user input."],
+      ["Prevent XSS?", "Escape output using htmlspecialchars() (or {{ }} in Laravel), validate and sanitize user input, never output raw user input, and use a Content Security Policy (CSP) as an additional layer of protection."],
       ["crypt() vs password_hash()?", "password_hash() is a safe wrapper over crypt()."],
       ["What is an interface?", "A contract of method signatures a class must implement."],
       ["SOLID principles?", "SRP, OCP, LSP, ISP, DIP — rules for maintainable OOP."],
