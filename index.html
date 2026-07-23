@@ -491,7 +491,7 @@ return response()->stream(function () use ($orderText) {
       ["Readonly properties (PHP 8.1)?", "readonly public int $id; — can be set once, then never changed."],
       ["Attributes (PHP 8)?", "Metadata on classes/methods: #[Route('/home')]. Laravel 13 uses these heavily."],
       ["Prepared statements?", "Send SQL + params separately so user input can't change the query (stops SQL injection)."],
-      ["What is serialization?", "Turning an object/array into a storable string (serialize/json) and back (unserialize/json_decode)."],
+      ["What is serialization?", "Serialization is the process of converting PHP data (objects/arrays) into a storable or transferable format so it can be restored later."],
       ["json_encode / json_decode?", "Encode PHP to JSON string; decode JSON to array/object. Use JSON_UNESCAPED_UNICODE for safety."],
       ["Union / mixed types?", "function foo(int|string $x) {} — accept more than one type. mixed = any type."],
       ["PHP built-in server?", "php -S localhost:8000 — handy for quick local testing without Apache/Nginx."],
