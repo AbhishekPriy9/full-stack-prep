@@ -566,7 +566,7 @@ return response()->stream(function () use ($orderText) {
       ["Disable CSRF?", "validateCsrfTokens()->except([...]) in bootstrap/app.php withMiddleware()."],
       ["Caching?", "Temp store for results. Cache::remember() / Cache::put() with TTL."],
       ["Laravel Octane?", "Keeps the app in memory using Swoole/RoadRunner/FrankenPHP for high performance."],
-      ["Service container & bindings?", "Resolves dependencies automatically. bind() (new each time), singleton() (same), instance() (given)."],
+      ["Service container?", "Service Container is a tool that automatically creates objects and resolves their dependencies."],
       ["Relationships?", "One-to-One, One-to-Many, Many-to-Many (belongsToMany), hasManyThrough, polymorphic."],
       ["Custom Artisan command?", "make:command, set signature/description, write handle()."],
       ["composer dump-autoload?", "Rebuilds the class map; use when 'class not found' appears."],
