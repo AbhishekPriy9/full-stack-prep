@@ -560,7 +560,7 @@ return response()->stream(function () use ($orderText) {
       ["Repository pattern?", "Abstraction between business logic and data access (Eloquent)."],
       ["What's new in 10/11/12/13?", "10: PHP 8.1, Process facade. 11: PHP 8.2, no Kernel.php, per-second rate limit, SQLite default. 12: React/Vue/Livewire kits, WorkOS auth, debug()->suggest(). 13 (Mar 2026): PHP 8.3+, PHP Attributes, Laravel AI SDK, JSON:API Resources, Cache::touch(), route metadata, few breaking changes."],
       ["Geofencing?", "A virtual map boundary; app reacts on enter/exit."],
-      ["DTO?", "A typed data object that keeps controllers clean and type-safe."],
+      ["DTO?", "A DTO (Data Transfer Object) is an object used to transfer data between layers of an application, such as from a controller to a service. It contains only data and no business logic, making the code cleaner, type-safe, and easier to maintain"],
       ["Prevent SQL injection?", "Use Eloquent (auto binding), avoid raw SQL, validate input."],
       [".env keys?", "APP_ENV (error level), APP_KEY (32-char key for crypto), APP_DEBUG (detail errors; off in prod)."],
       ["Disable CSRF?", "validateCsrfTokens()->except([...]) in bootstrap/app.php withMiddleware()."],
