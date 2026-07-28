@@ -722,7 +722,7 @@ return response()->stream(function () use ($orderText) {
       ["Window functions?", "Window functions perform calculations across a set of related rows while preserving every row in the result. They are commonly used for ranking"],
       ["What are transactions (ACID)?", "Atomic (all or nothing), Consistent, Isolated, Durable. Wrap with BEGIN/COMMIT/ROLLBACK."],
       ["Isolation levels?", "Read Uncommitted, Read Committed, Repeatable Read, Serializable. Higher = safer but slower."],
-      ["Normalization?", "Organizing data to reduce duplication: 1NF (atomic), 2NF (full key), 3NF (no transitive dependency)."],
+      ["Normalization?", "Organizing data to reduce duplication: 1. Every column must contain a single value. 2. 2NF removes partial dependency on a composite key.  3. 3NF removes transitive dependency where a non-key column depends on another non-key column instead of the primary key."],
       ["Denormalization?", "Intentionally duplicating data for read speed (e.g. a total column). Trade-off vs writes."],
       ["What is an index?", "A data structure (usually B-tree) that speeds up searches at the cost of write/update overhead."],
       ["Composite index / leftmost prefix?", "Index on (a,b,c) helps queries filtering by a, (a,b), or (a,b,c) — but not by b alone."],
