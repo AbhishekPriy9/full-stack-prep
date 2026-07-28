@@ -719,7 +719,7 @@ return response()->stream(function () use ($orderText) {
       ["GROUP BY / HAVING?", "GROUP BY groups rows for aggregates. HAVING filters groups (WHERE filters rows before grouping)."],
       ["Aggregate functions?", "COUNT, SUM, AVG, MIN, MAX."],
       ["Subquery?", "A query inside another query, often in WHERE/FROM. Can be slow; joins sometimes better."],
-      ["Window functions?", "Compute across a set of rows without collapsing them: ROW_NUMBER(), RANK(), SUM() OVER (PARTITION BY ...)."],
+      ["Window functions?", "Window functions perform calculations across a set of related rows while preserving every row in the result. They are commonly used for ranking"],
       ["What are transactions (ACID)?", "Atomic (all or nothing), Consistent, Isolated, Durable. Wrap with BEGIN/COMMIT/ROLLBACK."],
       ["Isolation levels?", "Read Uncommitted, Read Committed, Repeatable Read, Serializable. Higher = safer but slower."],
       ["Normalization?", "Organizing data to reduce duplication: 1NF (atomic), 2NF (full key), 3NF (no transitive dependency)."],
