@@ -810,7 +810,7 @@ return response()->stream(function () use ($orderText) {
       ["Forms?", "Controlled inputs: value from state, onChange updates it. onSubmit preventDefault()."],
       ["Fetch API data?", "useEffect + fetch (or axios); store in useState; handle loading/error."],
       ["Keys?", "Stable id per list item so React tracks changes; don't use array index."],
-      ["Hook?", "A function starting with 'use' (useState, useEffect, useRef)."],
+      ["Hook?", "A function starting with 'use' (useState, useEffect, useRef). A way for functional components to use React features"],
       ["Controlled vs uncontrolled?", "Controlled: value + onChange from state. Uncontrolled: read via ref on submit."],
       ["useState vs useReducer?", "useState for simple state; useReducer for complex state with actions."],
       ["useRef?", "Holds a mutable value that doesn't cause re-render; often for DOM nodes or timers."],
